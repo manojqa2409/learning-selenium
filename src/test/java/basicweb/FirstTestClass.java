@@ -1,5 +1,7 @@
 package basicweb;
 
+import static org.testng.Assert.assertEquals;
+
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,8 +35,13 @@ public class FirstTestClass {
 	public void testAmazonPage() {
 		//Open the Amazon URL
 		driver.get("https://www.amazon.in");
+		String Title = driver.getTitle();
+		System.out.println(Title);
+		assertEquals("Amazon.in", Title);
+		
 		// Print the message
-		System.out.println("Browser Opened");
+		System.out.println("Browser Opened and validated the Title");
+		
 		
 	}
 	
