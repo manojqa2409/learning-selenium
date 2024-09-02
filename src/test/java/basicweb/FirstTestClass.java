@@ -40,7 +40,7 @@ public class FirstTestClass {
 		assertEquals("Amazon.in", Title);
 		
 		// Print the message
-		System.out.println("Browser Opened and validated the Title");
+		System.out.println("Browser Opened and validated the Title-Added");
 		
 		
 	}
