@@ -32,12 +32,12 @@ public class FirstTestClass {
 	}
 	
 	@Test
-	public void testAmazonPage() {
+	public void testLUMAPage() {
 		//Open the Amazon URL
-		driver.get("https://www.amazon.in");
+		driver.get("https://magento.softwaretestingboard.com/");
 		String Title = driver.getTitle();
 		System.out.println(Title);
-		assertEquals("Amazon.in", Title);
+		assertEquals("Home Page", Title);
 		
 		// Print the message
 		System.out.println("Browser Opened and validated the Title-Added Log");
